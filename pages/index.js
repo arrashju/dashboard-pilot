@@ -49,8 +49,9 @@ export default function Home() {
             priority
           />
         </div>
-        <Tile label="" />
-        <Button label="Hello World" />
+        <Tile>
+          <Button>Hello World!</Button>
+        </Tile>
 
         <div className={styles.grid}>
           <a
