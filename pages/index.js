@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import { Button, Tile } from "n2t-design-system";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
+            <code className={styles.code}>pages/index.tsx</code>
           </p>
           <div>
             <a
@@ -26,7 +27,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -39,16 +40,19 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
+        <Tile style={{ background: "#777" }}>
+          <div className={styles.center}>
+            <Image
+              className={styles.logo}
+              src="/next.svg"
+              alt="Next.js Logo"
+              width={180}
+              height={37}
+              priority
+            />
+          </div>
+          <Button>N2T</Button>
+        </Tile>
 
         <div className={styles.grid}>
           <a
@@ -110,5 +114,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
