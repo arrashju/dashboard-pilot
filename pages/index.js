@@ -49,8 +49,8 @@ export default function Home() {
             priority
           />
         </div>
-        <Tile>
-          <Button>Hello World!</Button>
+        <Tile style={{ height: "200px", display: "flex" }}>
+          <Button style={{ margin: "auto" }}>Hello World!</Button>
         </Tile>
 
         <div className={styles.grid}>

@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "n2t-design-system": "0.2.1",
+    "n2t-design-system": "^0.2.2",
     "next": "13.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
