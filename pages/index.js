@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import { Button, Tile } from "n2t-design-system";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,7 +39,6 @@ export default function Home() {
             </a>
           </div>
         </div>
-
         <div className={styles.center}>
           <Image
             className={styles.logo}
@@ -49,6 +49,8 @@ export default function Home() {
             priority
           />
         </div>
+        <Tile label="" />
+        <Button label="Hello World" />
 
         <div className={styles.grid}>
           <a
