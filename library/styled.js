@@ -1,3 +1,5 @@
+import { css } from "styled-components";
+
 module.exports = {
   color: {
     red: "#5C0007",
@@ -15,25 +17,25 @@ module.exports = {
     body: "'IBM Plex Serif'",
   },
   typography: {
-    B1: `
-      font-family: 'IBM Plex Serif';
+    B1: css`
+      font-family: "IBM Plex Serif";
       font-size: 14px;
-      font-weight: 500px
+      font-weight: 500px;
     `,
-    B2: `
-    font-family: 'IBM Plex Serif';
-    font-size: 16px;
-    font-weight: 500px
-  `,
-    B3: `
-    font-family: 'IBM Plex Serif';
-    font-size: 20px;
-    font-weight: 500px
-  `,
-    B4: `
-      font-family: 'IBM Plex Serif';
+    B2: css`
+      font-family: "IBM Plex Serif";
+      font-size: 16px;
+      font-weight: 500px;
+    `,
+    B3: css`
+      font-family: "IBM Plex Serif";
+      font-size: 20px;
+      font-weight: 500px;
+    `,
+    B4: css`
+      font-family: "IBM Plex Serif";
       font-size: 22px;
-      font-weight: 500px
+      font-weight: 500px;
     `,
   },
 };

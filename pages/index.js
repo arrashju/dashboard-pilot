@@ -35,7 +35,7 @@ export default function Home() {
             </Card.Img>
             <Card.Body style={{ height: "100px" }}>
               <B4 style={{ color: "white" }}>
-                Get Ready, Mars! Shuddle's Maiden Voyage Awaits!
+                {"Get Ready, Mars! Shuddle&aposs Maiden Voyage Awaits!"}
               </B4>
             </Card.Body>
           </Card>
@@ -54,7 +54,7 @@ export default function Home() {
             </Card.Img>
             <Card.Body style={{ height: "100px" }}>
               <B4 style={{ color: "white" }}>
-                Moon's Hidden Secrets: Ready for You to Uncover
+                {"Moon's Hidden Secrets: Ready for You to Uncover"}
               </B4>
             </Card.Body>
           </Card>
@@ -73,7 +73,7 @@ export default function Home() {
             </Card.Img>
             <Card.Body style={{ height: "100px" }}>
               <B4 style={{ color: "white" }}>
-                Mercury Express: Fast, Faster, Fastest Yet! Made History!
+                {"Mercury Express: Fast, Faster, Fastest Yet! Made History!"}
               </B4>
             </Card.Body>
           </Card>
@@ -109,8 +109,8 @@ export default function Home() {
             <Card.Body
               style={{ height: "132px", padding: "10px 0", textAlign: "left" }}
             >
-              <B3>Together for Martian Frontiers</B3>
-              <B4>Shuddle's Pioneering Partnership</B4>
+              <B3>{"Together for Martian Frontiers"}</B3>
+              <B4>{"Shuddle's Pioneering Partnership"}</B4>
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "C" }} kind="C1">
@@ -125,8 +125,8 @@ export default function Home() {
             <Card.Body
               style={{ height: "132px", padding: "10px 0", textAlign: "left" }}
             >
-              <B3>Putting You First</B3>
-              <B4>Shuddle's Cutting-edge Life Support Systems Unveiled</B4>
+              <B3>{"Putting You First"}</B3>
+              <B4>{"Shuddle's Cutting-edge Life Support Systems Unveiled"}</B4>
             </Card.Body>
           </Card>
         </Middle>
@@ -149,8 +149,8 @@ export default function Home() {
             <Card.Body
               style={{ width: "498px", padding: "20px", textAlign: "center" }}
             >
-              <B3>Join the Adventure</B3>
-              <B4>Be a Part of Shuddle's Exciting Explorers Club</B4>
+              <B3>{"Join the Adventure"}</B3>
+              <B4>{"Be a Part of Shuddle's Exciting Explorers Club"}</B4>
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "B" }} kind="C3" background="#EEE9F1">
@@ -165,8 +165,8 @@ export default function Home() {
             <Card.Body
               style={{ width: "498px", padding: "20px", textAlign: "center" }}
             >
-              <B3>Dine Among the Stars</B3>
-              <B4>Meet Shuddle's Stellar Space Chefs!</B4>
+              <B3>{"Dine Among the Stars"}</B3>
+              <B4>{"Meet Shuddle's Stellar Space Chefs!"}</B4>
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "C" }} kind="C2" background="#EEE9F1">
@@ -185,7 +185,7 @@ export default function Home() {
                 textAlign: "center",
               }}
             >
-              <B4>Record-Breaking Journey to the Icy Giant</B4>
+              <B4>{"Record-Breaking Journey to the Icy Giant"}</B4>
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "D" }} kind="C2" background="#EEE9F1">
@@ -204,7 +204,7 @@ export default function Home() {
                 textAlign: "center",
               }}
             >
-              <B4>Record-Breaking Journey to the Icy Giant</B4>
+              <B4>{"Record-Breaking Journey to the Icy Giant"}</B4>
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "E" }} kind="C2" background="#EEE9F1">
@@ -223,7 +223,7 @@ export default function Home() {
                 textAlign: "center",
               }}
             >
-              <B4>Record-Breaking Journey to the Icy Giant</B4>
+              <B4>{"Record-Breaking Journey to the Icy Giant"}</B4>
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "F" }} kind="C2" background="#EEE9F1">
@@ -242,7 +242,7 @@ export default function Home() {
                 textAlign: "center",
               }}
             >
-              <B4>Record-Breaking Journey to the Icy Giant</B4>
+              <B4>{"Record-Breaking Journey to the Icy Giant"}</B4>
             </Card.Body>
           </Card>
         </Lower>
@@ -256,11 +256,11 @@ const Section = styled.div`
 `;
 
 const B4 = styled.div`
-  ${theme.typography.B4};
+  ${theme.typography.B4}
 `;
 
 const B3 = styled.div`
-  ${theme.typography.B3};
+  ${theme.typography.B3}
   font-family: ${theme.font.heading};
   color: #5b5b5b;
 `;
