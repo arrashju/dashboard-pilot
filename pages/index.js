@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-// import { Inter } from "next/font/google";
-import { Card, Button, Input } from "shuddle";
-
-// const inter = Inter({ subsets: ["latin"] });
+import { Card } from "shuddle";
+import styled from "styled-components";
+import theme from "../library/styled";
 
 export default function Home() {
   return (
@@ -14,18 +13,330 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Card kind="C1" background="#eee">
-        <Card.Img accent="#888">
-          <Image src="/me.jpeg" width={870} height={881} />
-        </Card.Img>
-        <Card.Body>UX Unicorn</Card.Body>
-      </Card>
-
-      <Button rounded={false} outline={false}>
-        Normal Solid
-      </Button>
-
-      <Input from="Detroit" to="Las Vegas" />
+      <Section
+        style={{
+          gridArea: "on",
+          backgroundColor: "#eee9f1",
+        }}
+      >
+        <HeroGrid>
+          <Card
+            style={{ gridArea: "A" }}
+            kind="C2"
+            background={theme.color.amethyst}
+          >
+            <Card.Img>
+              <Image
+                src="/home/maiden-voyage.png"
+                alt="Maiden Voyage"
+                width={870}
+                height={881}
+              />
+            </Card.Img>
+            <Card.Body style={{ height: "100px" }}>
+              <B4 style={{ color: "white" }}>
+                Get Ready, Mars! Shuddle's Maiden Voyage Awaits!
+              </B4>
+            </Card.Body>
+          </Card>
+          <Card
+            style={{ gridArea: "B" }}
+            kind="C2"
+            background={theme.color.amethyst}
+          >
+            <Card.Img>
+              <Image
+                src="/home/hidden-secrets.png"
+                alt="Moon's Hidden Secrets"
+                width={870}
+                height={881}
+              />
+            </Card.Img>
+            <Card.Body style={{ height: "100px" }}>
+              <B4 style={{ color: "white" }}>
+                Moon's Hidden Secrets: Ready for You to Uncover
+              </B4>
+            </Card.Body>
+          </Card>
+          <Card
+            style={{ gridArea: "C" }}
+            kind="C2"
+            background={theme.color.amethyst}
+          >
+            <Card.Img>
+              <Image
+                src="/home/mercury-express.png"
+                alt="Mercury Express"
+                width={870}
+                height={881}
+              />
+            </Card.Img>
+            <Card.Body style={{ height: "100px" }}>
+              <B4 style={{ color: "white" }}>
+                Mercury Express: Fast, Faster, Fastest Yet! Made History!
+              </B4>
+            </Card.Body>
+          </Card>
+        </HeroGrid>
+      </Section>
+      <Section style={{ gridArea: "tw" }}>
+        <Middle>
+          <Card style={{ gridArea: "A" }} kind="C1">
+            <Card.Img accent={theme.color.amethyst}>
+              <Image
+                src="/home/titan-station.png"
+                alt="Titan Station"
+                width={870}
+                height={881}
+              />
+            </Card.Img>
+            <Card.Body
+              style={{ height: "132px", padding: "10px 0", textAlign: "left" }}
+            >
+              <B3>Titan Station</B3>
+              <B4>Witness the Charm of Saturn Unfolding</B4>
+            </Card.Body>
+          </Card>
+          <Card style={{ gridArea: "B" }} kind="C1">
+            <Card.Img accent={theme.color.amethyst}>
+              <Image
+                src="/home/pioneer-partner.png"
+                alt="Pioneer Partnership"
+                width={870}
+                height={881}
+              />
+            </Card.Img>
+            <Card.Body
+              style={{ height: "132px", padding: "10px 0", textAlign: "left" }}
+            >
+              <B3>Together for Martian Frontiers</B3>
+              <B4>Shuddle's Pioneering Partnership</B4>
+            </Card.Body>
+          </Card>
+          <Card style={{ gridArea: "C" }} kind="C1">
+            <Card.Img accent={theme.color.amethyst}>
+              <Image
+                src="/home/support-systems.png"
+                alt="Support Systems"
+                width={870}
+                height={881}
+              />
+            </Card.Img>
+            <Card.Body
+              style={{ height: "132px", padding: "10px 0", textAlign: "left" }}
+            >
+              <B3>Putting You First</B3>
+              <B4>Shuddle's Cutting-edge Life Support Systems Unveiled</B4>
+            </Card.Body>
+          </Card>
+        </Middle>
+      </Section>
+      <Section
+        style={{
+          gridArea: "th",
+        }}
+      >
+        <Lower>
+          <Card style={{ gridArea: "A" }} kind="C3" background="#EEE9F1">
+            <Card.Img accent={theme.color.amethyst}>
+              <Image
+                src="/home/explorer-club.png"
+                alt="Explorer's Club"
+                width={870}
+                height={881}
+              />
+            </Card.Img>
+            <Card.Body
+              style={{ width: "498px", padding: "20px", textAlign: "center" }}
+            >
+              <B3>Join the Adventure</B3>
+              <B4>Be a Part of Shuddle's Exciting Explorers Club</B4>
+            </Card.Body>
+          </Card>
+          <Card style={{ gridArea: "B" }} kind="C3" background="#EEE9F1">
+            <Card.Img accent={theme.color.amethyst}>
+              <Image
+                src="/home/space-chefs.png"
+                alt="Space Chefs"
+                width={870}
+                height={881}
+              />
+            </Card.Img>
+            <Card.Body
+              style={{ width: "498px", padding: "20px", textAlign: "center" }}
+            >
+              <B3>Dine Among the Stars</B3>
+              <B4>Meet Shuddle's Stellar Space Chefs!</B4>
+            </Card.Body>
+          </Card>
+          <Card style={{ gridArea: "C" }} kind="C2" background="#EEE9F1">
+            <Card.Img accent={theme.color.amethyst}>
+              <Image
+                src="/home/icy-giant.png"
+                alt="Icy Giant"
+                width={870}
+                height={881}
+              />
+            </Card.Img>
+            <Card.Body
+              style={{
+                height: "100px",
+                padding: "20px 30",
+                textAlign: "center",
+              }}
+            >
+              <B4>Record-Breaking Journey to the Icy Giant</B4>
+            </Card.Body>
+          </Card>
+          <Card style={{ gridArea: "D" }} kind="C2" background="#EEE9F1">
+            <Card.Img accent={theme.color.amethyst}>
+              <Image
+                src="/home/pluto-pioneer.png"
+                alt="Pluto Pioneer"
+                width={870}
+                height={881}
+              />
+            </Card.Img>
+            <Card.Body
+              style={{
+                height: "100px",
+                padding: "20px 30",
+                textAlign: "center",
+              }}
+            >
+              <B4>Record-Breaking Journey to the Icy Giant</B4>
+            </Card.Body>
+          </Card>
+          <Card style={{ gridArea: "E" }} kind="C2" background="#EEE9F1">
+            <Card.Img accent={theme.color.amethyst}>
+              <Image
+                src="/home/lunar-mystery.png"
+                alt="Lunar Mystery"
+                width={870}
+                height={881}
+              />
+            </Card.Img>
+            <Card.Body
+              style={{
+                height: "100px",
+                padding: "20px 30",
+                textAlign: "center",
+              }}
+            >
+              <B4>Record-Breaking Journey to the Icy Giant</B4>
+            </Card.Body>
+          </Card>
+          <Card style={{ gridArea: "F" }} kind="C2" background="#EEE9F1">
+            <Card.Img accent={theme.color.amethyst}>
+              <Image
+                src="/home/support-systems.png"
+                alt="Support Systems"
+                width={870}
+                height={881}
+              />
+            </Card.Img>
+            <Card.Body
+              style={{
+                height: "100px",
+                padding: "20px 30",
+                textAlign: "center",
+              }}
+            >
+              <B4>Record-Breaking Journey to the Icy Giant</B4>
+            </Card.Body>
+          </Card>
+        </Lower>
+      </Section>
     </>
   );
 }
+
+const Section = styled.div`
+  border-radius: 13px;
+`;
+
+const B4 = styled.div`
+  ${theme.typography.B4};
+`;
+
+const B3 = styled.div`
+  ${theme.typography.B3};
+  font-family: ${theme.font.heading};
+  color: #5b5b5b;
+`;
+
+const HeroGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-gap: 20px;
+  padding: 7.5% 0;
+
+  grid-template-areas:
+    "Z A A A A A A B B B B B B Y"
+    "X A A A A A A C C C C C C W";
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 7.5%;
+    grid-gap: 50px;
+    grid-template-areas:
+      "A"
+      "B"
+      "C";
+  }
+
+  > * {
+    color: white;
+  }
+`;
+
+const Middle = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-template-areas: "A B C";
+  padding: 5% 0;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    padding: 7.5%;
+    grid-gap: 50px;
+    grid-template-areas:
+      "A"
+      "B"
+      "C";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+`;
+
+const Lower = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 5% 0;
+
+  grid-template-areas:
+    "A A C D"
+    "B B E F";
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    padding: 7.5%;
+    grid-gap: 50px;
+    grid-template-areas:
+      "A"
+      "B"
+      "C"
+      "D"
+      "E"
+      "F";
+  }
+`;
