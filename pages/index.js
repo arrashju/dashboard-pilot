@@ -138,7 +138,7 @@ export default function Home() {
       >
         <Lower>
           <Card style={{ gridArea: "A" }} kind="C3" background="#EEE9F1">
-            <Card.Img accent={theme.color.amethyst}>
+            <Card.Img>
               <Image
                 src="/home/explorer-club.png"
                 alt="Explorer's Club"
@@ -154,7 +154,7 @@ export default function Home() {
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "B" }} kind="C3" background="#EEE9F1">
-            <Card.Img accent={theme.color.amethyst}>
+            <Card.Img>
               <Image
                 src="/home/space-chefs.png"
                 alt="Space Chefs"
@@ -170,7 +170,7 @@ export default function Home() {
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "C" }} kind="C2" background="#EEE9F1">
-            <Card.Img accent={theme.color.amethyst}>
+            <Card.Img>
               <Image
                 src="/home/icy-giant.png"
                 alt="Icy Giant"
@@ -208,7 +208,7 @@ export default function Home() {
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "E" }} kind="C2" background="#EEE9F1">
-            <Card.Img accent={theme.color.amethyst}>
+            <Card.Img>
               <Image
                 src="/home/lunar-mystery.png"
                 alt="Lunar Mystery"
@@ -227,7 +227,7 @@ export default function Home() {
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "F" }} kind="C2" background="#EEE9F1">
-            <Card.Img accent={theme.color.amethyst}>
+            <Card.Img>
               <Image
                 src="/home/support-systems.png"
                 alt="Support Systems"
@@ -263,6 +263,7 @@ const B3 = styled.div`
   ${theme.typography.B3}
   font-family: ${theme.font.heading};
   color: #5b5b5b;
+  line-height: 200%;
 `;
 
 const HeroGrid = styled.div`

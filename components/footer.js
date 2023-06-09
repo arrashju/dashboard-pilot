@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import theme from "../library/styled";
 import Shuddle from "../components/assets/shuddle";
 import {
@@ -11,50 +11,69 @@ import {
 } from "./assets/social-media";
 
 const Footer = () => {
+  const breakpoint = "1000";
   return (
     <>
-      <Background>
-        <Top>
-          <CompanyInfo />
-          <FooterItem
-            header={"About Us"}
-            body={["Our Mission", "Leadership", "Safety Standards", "Partners"]}
-          />
-          <FooterItem
-            header={"Contact"}
-            body={["Our Mission", "Leadership", "Safety Standards", "Partners"]}
-          />
-          <FooterItem
-            header={"Resources"}
-            body={[
-              "FAQs",
-              "Galactic Weather",
-              "Transit Tips",
-              "Shuddle Glossary",
-            ]}
-          />
-          <FooterItem
-            header={"Community"}
-            body={[
-              "Outreach Programs",
-              "Volunteer Opportunities",
-              "Educational Partnerships",
-              "Traveler Stories",
-            ]}
-          />
-        </Top>
-        <Bottom>
-          <B2>{"© 2023 Shuddle. All rights reserved"}</B2>
-          <Icons>
-            <Facebook />
-            <Instagram />
-            <LinkedIn />
-            <TikTok />
-            <Twitter />
-            <YouTube />
-          </Icons>
-        </Bottom>
-      </Background>
+      <ThemeProvider theme={{ breakpoint }}>
+        <Background>
+          <Top>
+            <CompanyInfo />
+            <FooterList>
+              <FooterItem
+                header={"About Us"}
+                body={[
+                  "Our Mission",
+                  "Leadership",
+                  "Safety Standards",
+                  "Partners",
+                ]}
+              />
+              <FooterItem
+                header={"Contact"}
+                body={[
+                  "Our Mission",
+                  "Leadership",
+                  "Safety Standards",
+                  "Partners",
+                ]}
+              />
+              <FooterItem
+                header={"Resources"}
+                body={[
+                  "FAQs",
+                  "Galactic Weather",
+                  "Transit Tips",
+                  "Shuddle Glossary",
+                ]}
+              />
+              <FooterItem
+                header={"Community"}
+                body={[
+                  "Outreach Programs",
+                  "Volunteer Opportunities",
+                  "Educational Partnerships",
+                  "Traveler Stories",
+                ]}
+              />
+            </FooterList>
+          </Top>
+          <Bottom>
+            <Icons>
+              <IconRow>
+                <Facebook />
+                <Instagram />
+                <LinkedIn />
+              </IconRow>
+              <IconRow>
+                <TikTok />
+                <Twitter />
+                <YouTube />
+              </IconRow>
+            </Icons>
+            <B2>{"© 2023 Shuddle. All rights reserved"}</B2>
+          </Bottom>
+        </Background>
+      </ThemeProvider>
     </>
   );
 };
@@ -88,18 +107,31 @@ const Logo = styled.div`
   margin-bottom: 25px;
 `;
 
+const FooterList = styled.div`
+  display: grid;
+  grid-template-columns: 1fr repeat(4, auto);
+  grid-gap: 74px;
+  margin-right: -74px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint}px) {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    margin-right: 0;
+  }
+`;
+
 const B2bold = styled.div`
-  ${theme.color.B2bold}
+  ${theme.typography.B2bold}
   line-height: 60px;
 `;
 
 const B2 = styled.div`
-  ${theme.color.B2}
+  ${theme.typography.B2}
   line-height: 40px;
 `;
 
 const B2alt = styled.div`
-  ${theme.color.B2}
+  ${theme.typography.B2}
   line-height: 31px;
 `;
 
@@ -112,15 +144,23 @@ const Background = styled.div`
   background-color: ${theme.color.amethyst};
   padding: 59px 7.5%;
   color: white;
+
+  @media (max-width: 900px) {
+    gap: 80px 0;
+  }
 `;
 
 const Top = styled.div`
-  display: grid;
-  grid-template-columns: 1fr repeat(4, auto);
-  grid-gap: 74px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   width: 100%;
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    gap: 50px;
+  }
 `;
 
 const Bottom = styled.div`
@@ -129,9 +169,23 @@ const Bottom = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint}px) {
+    flex-direction: column;
+  }
 `;
 
 const Icons = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint}px) {
+    margin-bottom: 60px;
+  }
+`;
+
+const IconRow = styled.div`
   display: flex;
   flex-direction: row;
   gap: 32px;

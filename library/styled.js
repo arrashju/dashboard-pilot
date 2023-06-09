@@ -1,5 +1,7 @@
 import { css } from "styled-components";
 
+const breakpoint = "1000";
+
 module.exports = {
   color: {
     red: "#5C0007",
@@ -19,28 +21,47 @@ module.exports = {
   typography: {
     B1: css`
       font-family: "IBM Plex Serif";
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 500px;
+
+      @media-query (max-width: ${breakpoint}px) {
+        font-size: 11px;
+      }
     `,
     B2: css`
-      font-family: "IBM Plex Serif";
-      font-size: 16px;
+      font-family: IBM Plex Serif;
+      font-size: 14px;
       font-weight: 500px;
+
+      @media-query (max-width: ${breakpoint}px) {
+        font-size: 13.5px;
+      }
     `,
     B2bold: css`
       font-family: "IBM Plex Serif";
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 700px;
+
+      @media-query (max-width: ${breakpoint}px) {
+        font-size: 13.5px;
+      }
     `,
     B3: css`
       font-family: "IBM Plex Serif";
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500px;
+      @media-query (max-width: ${breakpoint}px) {
+        font-size: 16px;
+      }
     `,
     B4: css`
       font-family: "IBM Plex Serif";
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 500px;
+
+      @media-query (max-width: ${breakpoint}px) {
+        font-size: 18px;
+      }
     `,
   },
 };

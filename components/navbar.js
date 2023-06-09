@@ -2,6 +2,7 @@ import { Nav } from "shuddle";
 import Image from "next/image";
 import Shuddle from "../components/assets/shuddle";
 import theme from "../library/styled";
+import styled from "styled-components";
 
 const Navbar = () => {
   const links = {
@@ -69,7 +70,7 @@ const Navbar = () => {
                     active={active}
                     horizontal={false}
                   >
-                    {text}
+                    <B2>{text}</B2>
                   </Nav.DropdownItem>
                 </>
               );
@@ -80,5 +81,9 @@ const Navbar = () => {
     </>
   );
 };
+
+const B2 = styled.div`
+  ${theme.typography.B2}
+`;
 
 export default Navbar;
