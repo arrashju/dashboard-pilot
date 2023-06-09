@@ -59,12 +59,12 @@ const Footer = () => {
           <Bottom>
             <OtherItems>
               <Icons>
-                <Facebook />
                 <Instagram />
                 <LinkedIn />
                 <TikTok />
-                <Twitter />
+                <Facebook />
                 <YouTube />
+                <Twitter />
               </Icons>
               <CompanyInfo />
             </OtherItems>
