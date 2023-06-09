@@ -82,8 +82,8 @@ const FooterItem = ({ header, body }) => {
   return (
     <div style={{ textAlign: "center" }}>
       <B2bold>{header}</B2bold>
-      {body.map((item) => (
-        <B2>{item}</B2>
+      {body.map((item, index) => (
+        <B2 key={index}>{item}</B2>
       ))}
     </div>
   );
