@@ -22,7 +22,7 @@ module.exports = {
     B1: css`
       font-family: "IBM Plex Serif";
       font-size: 13px;
-      font-weight: 500px;
+      font-weight: 450;
 
       @media-query (max-width: ${breakpoint}px) {
         font-size: 11px;
@@ -31,7 +31,7 @@ module.exports = {
     B2: css`
       font-family: IBM Plex Serif;
       font-size: 14px;
-      font-weight: 500px;
+      font-weight: 450;
 
       @media-query (max-width: ${breakpoint}px) {
         font-size: 13.5px;
@@ -40,7 +40,7 @@ module.exports = {
     B2bold: css`
       font-family: "IBM Plex Serif";
       font-size: 14px;
-      font-weight: 700px;
+      font-weight: 700;
 
       @media-query (max-width: ${breakpoint}px) {
         font-size: 13.5px;
@@ -49,7 +49,7 @@ module.exports = {
     B3: css`
       font-family: "IBM Plex Serif";
       font-size: 18px;
-      font-weight: 500px;
+      font-weight: 450;
       @media-query (max-width: ${breakpoint}px) {
         font-size: 16px;
       }
@@ -57,7 +57,7 @@ module.exports = {
     B4: css`
       font-family: "IBM Plex Serif";
       font-size: 20px;
-      font-weight: 500px;
+      font-weight: 450;
 
       @media-query (max-width: ${breakpoint}px) {
         font-size: 18px;
