@@ -117,7 +117,7 @@ export default function Home() {
                 textAlign: "center",
               }}
             >
-              <B3>{"Together for Martian Frontiers"}</B3>
+              <B3>{"Martian Unity"}</B3>
               <B4>{"Shuddle's Pioneering Partnership"}</B4>
             </Card.Body>
           </Card>
@@ -138,7 +138,7 @@ export default function Home() {
               }}
             >
               <B3>{"Putting You First"}</B3>
-              <B4>{"Shuddle's Cutting-edge Life Support Systems Unveiled"}</B4>
+              <B4>{"Life Support Systems Unveiled"}</B4>
             </Card.Body>
           </Card>
         </Middle>
