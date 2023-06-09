@@ -94,7 +94,7 @@ export default function Home() {
               style={{
                 minHeight: "132px",
                 padding: "10px 0",
-                textAlign: "left",
+                textAlign: "center",
               }}
             >
               <B3>Titan Station</B3>
@@ -114,7 +114,7 @@ export default function Home() {
               style={{
                 minHeight: "132px",
                 padding: "10px 0",
-                textAlign: "left",
+                textAlign: "center",
               }}
             >
               <B3>{"Together for Martian Frontiers"}</B3>
@@ -134,7 +134,7 @@ export default function Home() {
               style={{
                 minHeight: "132px",
                 padding: "10px 0",
-                textAlign: "left",
+                textAlign: "center",
               }}
             >
               <B3>{"Putting You First"}</B3>
@@ -160,7 +160,7 @@ export default function Home() {
             </Card.Img>
             <Card.Body
               style={{
-                maxWidth: "498px",
+                maxWidth: "67%",
                 padding: "20px",
                 textAlign: "center",
               }}
@@ -180,7 +180,7 @@ export default function Home() {
             </Card.Img>
             <Card.Body
               style={{
-                maxWidth: "498px",
+                maxWidth: "67%",
                 padding: "20px",
                 textAlign: "center",
               }}
