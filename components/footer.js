@@ -59,22 +59,19 @@ const Footer = () => {
           <Bottom>
             <OtherItems>
               <Icons>
-                <IconRow>
-                  <Facebook />
-                  <Instagram />
-                  <LinkedIn />
-                </IconRow>
-                <IconRow>
-                  <TikTok />
-                  <Twitter />
-                  <YouTube />
-                </IconRow>
+                <Facebook />
+                <Instagram />
+                <LinkedIn />
+                <TikTok />
+                <Twitter />
+                <YouTube />
               </Icons>
-
               <CompanyInfo />
-              <B2>{"© 2023 Shuddle. All rights reserved"}</B2>
             </OtherItems>
           </Bottom>
+          <B2 style={{ textAlign: "center" }}>
+            {"© 2023 Shuddle. All rights reserved"}
+          </B2>
         </Background>
       </ThemeProvider>
     </>
@@ -94,7 +91,7 @@ const FooterItem = ({ header, body }) => {
 
 const CompanyInfo = () => {
   return (
-    <div style={{ textAlign: "center" }}>
+    <Company>
       <Logo>
         <Shuddle />
       </Logo>
@@ -102,7 +99,7 @@ const CompanyInfo = () => {
       <B2alt>{"123 Galactic Avenue"}</B2alt>
       <B2alt>{"Stellar City, Alpha Centauri"}</B2alt>
       <B2alt>{"XYZ 98765"}</B2alt>
-    </div>
+    </Company>
   );
 };
 const Div = styled.div`
@@ -117,7 +114,7 @@ const Logo = styled.div`
 
 const FooterList = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 55px 90px;
 `;
 
@@ -145,6 +142,10 @@ const Background = styled.div`
   background-color: ${theme.color.amethyst};
   padding: 59px 7.5%;
   color: white;
+
+  @media (max-width: 607px) {
+    gap: 100px;
+  }
 `;
 
 const Top = styled.div`
@@ -168,23 +169,30 @@ const Bottom = styled.div`
 const OtherItems = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 70px;
+  grid-gap: 100px;
   align-items: center;
-  justify-content: space-between;
-  text-align: center;
+  justify-content: center;
 `;
 
 const Icons = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(34px, 1fr));
+  grid-gap: 32px;
+  align-items: center;
+  justify-content: center;
+  max-width: 364px;
+
+  @media (max-width: 619px) {
+    margin: auto;
+  }
 `;
 
-const IconRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  margin: auto;
+const Company = styled.div`
+  text-align: center;
+  margin-left: auto;
+  @media (max-width: 619px) {
+    margin: auto;
+  }
 `;
 
 export default Footer;

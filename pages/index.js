@@ -160,7 +160,7 @@ export default function Home() {
             </Card.Img>
             <Card.Body
               style={{
-                maxWidth: "67%",
+                maxWidth: "71%",
                 padding: "20px",
                 textAlign: "center",
               }}
@@ -180,7 +180,7 @@ export default function Home() {
             </Card.Img>
             <Card.Body
               style={{
-                maxWidth: "67%",
+                maxWidth: "71%",
                 padding: "20px",
                 textAlign: "center",
               }}
@@ -211,7 +211,7 @@ export default function Home() {
           <Card style={{ gridArea: "D" }} kind="C2" background="#EEE9F1">
             <Card.Img>
               <Image
-                src="/home/pluto-pioneer.png"
+                src="/home/unveil-unknown.png"
                 alt="Pluto Pioneer"
                 width={870}
                 height={881}
@@ -230,7 +230,7 @@ export default function Home() {
           <Card style={{ gridArea: "E" }} kind="C2" background="#EEE9F1">
             <Card.Img>
               <Image
-                src="/home/lunar-mystery.png"
+                src="/home/pluto-pioneer.png"
                 alt="Lunar Mystery"
                 width={870}
                 height={881}
@@ -249,7 +249,7 @@ export default function Home() {
           <Card style={{ gridArea: "F" }} kind="C2" background="#EEE9F1">
             <Card.Img>
               <Image
-                src="/home/support-systems.png"
+                src="/home/lunar-mystery.png"
                 alt="Support Systems"
                 width={870}
                 height={881}
@@ -262,7 +262,7 @@ export default function Home() {
                 textAlign: "center",
               }}
             >
-              <B4>{"Unmask the Lunar Mysteries: It's Time for Discovery"}</B4>
+              <B4>{"Lunar Mysteries: The Shuddle Journey"}</B4>
             </Card.Body>
           </Card>
         </Lower>
