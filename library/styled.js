@@ -27,6 +27,11 @@ module.exports = {
       font-size: 16px;
       font-weight: 500px;
     `,
+    B2bold: css`
+      font-family: "IBM Plex Serif";
+      font-size: 16px;
+      font-weight: 700px;
+    `,
     B3: css`
       font-family: "IBM Plex Serif";
       font-size: 20px;

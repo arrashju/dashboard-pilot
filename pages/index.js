@@ -35,7 +35,7 @@ export default function Home() {
             </Card.Img>
             <Card.Body style={{ height: "100px" }}>
               <B4 style={{ color: "white" }}>
-                {"Get Ready, Mars! Shuddle&aposs Maiden Voyage Awaits!"}
+                {"Get Ready, Mars! Shuddles Maiden Voyage Awaits!"}
               </B4>
             </Card.Body>
           </Card>
@@ -189,7 +189,7 @@ export default function Home() {
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "D" }} kind="C2" background="#EEE9F1">
-            <Card.Img accent={theme.color.amethyst}>
+            <Card.Img>
               <Image
                 src="/home/pluto-pioneer.png"
                 alt="Pluto Pioneer"
