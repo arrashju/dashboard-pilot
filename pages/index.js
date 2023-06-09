@@ -33,7 +33,7 @@ export default function Home() {
                 height={881}
               />
             </Card.Img>
-            <Card.Body style={{ height: "100px" }}>
+            <Card.Body style={{ minHeight: "100px" }}>
               <B4 style={{ color: "white" }}>
                 {"Get Ready, Mars! Shuddles Maiden Voyage Awaits!"}
               </B4>
@@ -52,7 +52,7 @@ export default function Home() {
                 height={881}
               />
             </Card.Img>
-            <Card.Body style={{ height: "100px" }}>
+            <Card.Body style={{ minHeight: "100px" }}>
               <B4 style={{ color: "white" }}>
                 {"Moon's Hidden Secrets: Ready for You to Uncover"}
               </B4>
@@ -71,7 +71,7 @@ export default function Home() {
                 height={881}
               />
             </Card.Img>
-            <Card.Body style={{ height: "100px" }}>
+            <Card.Body style={{ minHeight: "100px" }}>
               <B4 style={{ color: "white" }}>
                 {"Mercury Express: Fast, Faster, Fastest Yet! Made History!"}
               </B4>
@@ -91,7 +91,11 @@ export default function Home() {
               />
             </Card.Img>
             <Card.Body
-              style={{ height: "132px", padding: "10px 0", textAlign: "left" }}
+              style={{
+                minHeight: "132px",
+                padding: "10px 0",
+                textAlign: "left",
+              }}
             >
               <B3>Titan Station</B3>
               <B4>Witness the Charm of Saturn Unfolding</B4>
@@ -107,7 +111,11 @@ export default function Home() {
               />
             </Card.Img>
             <Card.Body
-              style={{ height: "132px", padding: "10px 0", textAlign: "left" }}
+              style={{
+                minHeight: "132px",
+                padding: "10px 0",
+                textAlign: "left",
+              }}
             >
               <B3>{"Together for Martian Frontiers"}</B3>
               <B4>{"Shuddle's Pioneering Partnership"}</B4>
@@ -123,7 +131,11 @@ export default function Home() {
               />
             </Card.Img>
             <Card.Body
-              style={{ height: "132px", padding: "10px 0", textAlign: "left" }}
+              style={{
+                minHeight: "132px",
+                padding: "10px 0",
+                textAlign: "left",
+              }}
             >
               <B3>{"Putting You First"}</B3>
               <B4>{"Shuddle's Cutting-edge Life Support Systems Unveiled"}</B4>
@@ -147,7 +159,11 @@ export default function Home() {
               />
             </Card.Img>
             <Card.Body
-              style={{ width: "498px", padding: "20px", textAlign: "center" }}
+              style={{
+                maxWidth: "498px",
+                padding: "20px",
+                textAlign: "center",
+              }}
             >
               <B3>{"Join the Adventure"}</B3>
               <B4>{"Be a Part of Shuddle's Exciting Explorers Club"}</B4>
@@ -163,7 +179,11 @@ export default function Home() {
               />
             </Card.Img>
             <Card.Body
-              style={{ width: "498px", padding: "20px", textAlign: "center" }}
+              style={{
+                maxWidth: "498px",
+                padding: "20px",
+                textAlign: "center",
+              }}
             >
               <B3>{"Dine Among the Stars"}</B3>
               <B4>{"Meet Shuddle's Stellar Space Chefs!"}</B4>
@@ -180,7 +200,7 @@ export default function Home() {
             </Card.Img>
             <Card.Body
               style={{
-                height: "100px",
+                minHeight: "100px",
                 padding: "20px 30",
                 textAlign: "center",
               }}
@@ -199,7 +219,7 @@ export default function Home() {
             </Card.Img>
             <Card.Body
               style={{
-                height: "100px",
+                minHeight: "100px",
                 padding: "20px 30",
                 textAlign: "center",
               }}
@@ -218,7 +238,7 @@ export default function Home() {
             </Card.Img>
             <Card.Body
               style={{
-                height: "100px",
+                minHeight: "100px",
                 padding: "20px 30",
                 textAlign: "center",
               }}
@@ -237,7 +257,7 @@ export default function Home() {
             </Card.Img>
             <Card.Body
               style={{
-                height: "100px",
+                minHeight: "100px",
                 padding: "20px 30",
                 textAlign: "center",
               }}
