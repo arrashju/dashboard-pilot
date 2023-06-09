@@ -167,11 +167,14 @@ const Bottom = styled.div`
 `;
 
 const OtherItems = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
   grid-gap: 100px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
 `;
 
 const Icons = styled.div`
@@ -182,17 +185,14 @@ const Icons = styled.div`
   justify-content: center;
   max-width: 364px;
 
-  @media (max-width: 619px) {
+  @media (max-width: 800px) {
     margin: auto;
+    margin-bottom: 100px;
   }
 `;
 
 const Company = styled.div`
   text-align: center;
-  margin-left: auto;
-  @media (max-width: 619px) {
-    margin: auto;
-  }
 `;
 
 export default Footer;
