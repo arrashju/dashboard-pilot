@@ -201,7 +201,7 @@ export default function Home() {
             <Card.Body
               style={{
                 minHeight: "100px",
-                padding: "20px 30",
+                padding: "20px 30px",
                 textAlign: "center",
               }}
             >
@@ -220,11 +220,11 @@ export default function Home() {
             <Card.Body
               style={{
                 minHeight: "100px",
-                padding: "20px 30",
+                padding: "20px 30px",
                 textAlign: "center",
               }}
             >
-              <B4>{"Record-Breaking Journey to the Icy Giant"}</B4>
+              <B4>{"Unveil the Unknown with Shuddle"}</B4>
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "E" }} kind="C2" background="#EEE9F1">
@@ -239,11 +239,11 @@ export default function Home() {
             <Card.Body
               style={{
                 minHeight: "100px",
-                padding: "20px 30",
+                padding: "20px 30px",
                 textAlign: "center",
               }}
             >
-              <B4>{"Record-Breaking Journey to the Icy Giant"}</B4>
+              <B4>{"Pluto Pioneer: Dare to be Adventurous"}</B4>
             </Card.Body>
           </Card>
           <Card style={{ gridArea: "F" }} kind="C2" background="#EEE9F1">
@@ -258,11 +258,11 @@ export default function Home() {
             <Card.Body
               style={{
                 minHeight: "100px",
-                padding: "20px 30",
+                padding: "20px 30px",
                 textAlign: "center",
               }}
             >
-              <B4>{"Record-Breaking Journey to the Icy Giant"}</B4>
+              <B4>{"Unmask the Lunar Mysteries: It's Time for Discovery"}</B4>
             </Card.Body>
           </Card>
         </Lower>
@@ -277,13 +277,15 @@ const Section = styled.div`
 
 const B4 = styled.div`
   ${theme.typography.B4}
+  line-height: 155%;
 `;
 
 const B3 = styled.div`
   ${theme.typography.B3}
   font-family: ${theme.font.heading};
   color: #5b5b5b;
-  line-height: 200%;
+  margin-bottom: 10px;
+  line-height: 155%;
 `;
 
 const HeroGrid = styled.div`
