@@ -17,7 +17,6 @@ const Footer = () => {
       <ThemeProvider theme={{ breakpoint }}>
         <Background>
           <Top>
-            <CompanyInfo />
             <FooterList>
               <FooterItem
                 header={"About Us"}
@@ -58,19 +57,23 @@ const Footer = () => {
             </FooterList>
           </Top>
           <Bottom>
-            <Icons>
-              <IconRow>
-                <Facebook />
-                <Instagram />
-                <LinkedIn />
-              </IconRow>
-              <IconRow>
-                <TikTok />
-                <Twitter />
-                <YouTube />
-              </IconRow>
-            </Icons>
-            <B2>{"© 2023 Shuddle. All rights reserved"}</B2>
+            <OtherItems>
+              <Icons>
+                <IconRow>
+                  <Facebook />
+                  <Instagram />
+                  <LinkedIn />
+                </IconRow>
+                <IconRow>
+                  <TikTok />
+                  <Twitter />
+                  <YouTube />
+                </IconRow>
+              </Icons>
+
+              <CompanyInfo />
+              <B2>{"© 2023 Shuddle. All rights reserved"}</B2>
+            </OtherItems>
           </Bottom>
         </Background>
       </ThemeProvider>
@@ -80,12 +83,12 @@ const Footer = () => {
 
 const FooterItem = ({ header, body }) => {
   return (
-    <div style={{ textAlign: "center" }}>
+    <Div style={{ textAlign: "center" }}>
       <B2bold>{header}</B2bold>
       {body.map((item, index) => (
         <B2 key={index}>{item}</B2>
       ))}
-    </div>
+    </Div>
   );
 };
 
@@ -102,6 +105,11 @@ const CompanyInfo = () => {
     </div>
   );
 };
+const Div = styled.div`
+  :not(:last-child) {
+    margin-bottom: 20px;
+  }
+`;
 
 const Logo = styled.div`
   margin-bottom: 25px;
@@ -109,15 +117,8 @@ const Logo = styled.div`
 
 const FooterList = styled.div`
   display: grid;
-  grid-template-columns: 1fr repeat(4, auto);
-  grid-gap: 74px;
-  margin-right: -74px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint}px) {
-    grid-template-columns: 1fr;
-    grid-gap: 40px;
-    margin-right: 0;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 55px 90px;
 `;
 
 const B2bold = styled.div`
@@ -127,7 +128,7 @@ const B2bold = styled.div`
 
 const B2 = styled.div`
   ${theme.typography.B2}
-  line-height: 40px;
+  line-height: 150%;
 `;
 
 const B2alt = styled.div`
@@ -144,17 +145,9 @@ const Background = styled.div`
   background-color: ${theme.color.amethyst};
   padding: 59px 7.5%;
   color: white;
-
-  @media (max-width: 900px) {
-    gap: 80px 0;
-  }
 `;
 
 const Top = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
 
   @media (max-width: 1300px) {
@@ -164,31 +157,34 @@ const Top = styled.div`
 `;
 
 const Bottom = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint}px) {
+  @media (max-width: 1300px) {
     flex-direction: column;
+    gap: 50px;
   }
+`;
+
+const OtherItems = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 70px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
 `;
 
 const Icons = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint}px) {
-    margin-bottom: 60px;
-  }
 `;
 
 const IconRow = styled.div`
   display: flex;
   flex-direction: row;
   gap: 32px;
+  margin: auto;
 `;
 
 export default Footer;
