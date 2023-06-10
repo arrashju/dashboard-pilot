@@ -110,6 +110,10 @@ const Div = styled.div`
 
 const Logo = styled.div`
   margin-bottom: 25px;
+
+  svg {
+    height: 19px;
+  }
 `;
 
 const FooterList = styled.div`
