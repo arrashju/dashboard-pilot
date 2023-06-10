@@ -30,10 +30,10 @@ const Footer = () => {
               <FooterItem
                 header={"Contact"}
                 body={[
-                  "Our Mission",
-                  "Leadership",
-                  "Safety Standards",
-                  "Partners",
+                  "Customer Support",
+                  "Press Inquiries",
+                  "Partnership Opportunities",
+                  "Careers",
                 ]}
               />
               <FooterItem
