@@ -40,7 +40,7 @@ export default function Home() {
           backgroundColor: "#eee9f1",
         }}
       >
-        <HeroGrid>
+        <Hero>
           <Card
             style={{ gridArea: "A" }}
             kind="C2"
@@ -98,7 +98,7 @@ export default function Home() {
               </B4>
             </Card.Body>
           </Card>
-        </HeroGrid>
+        </Hero>
       </Section>
       <Section style={{ gridArea: "tw" }}>
         <Middle>
@@ -309,72 +309,61 @@ const B3 = styled.div`
   line-height: 155%;
 `;
 
-const HeroGrid = styled.div`
+const Hero = styled.div`
   display: grid;
-  grid-template-columns: repeat(14, 1fr);
-  grid-gap: 20px;
   padding: 7.5% 0;
-
+  grid-gap: 20px;
+  grid-template-columns: repeat(14, 1fr);
   grid-template-areas:
     "Z A A A A A A B B B B B B Y"
     "X A A A A A A C C C C C C W";
 
   @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center;
     padding: 7.5%;
     grid-gap: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
       "A"
       "B"
       "C";
-  }
-
-  > * {
-    color: white;
   }
 `;
 
 const Middle = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  grid-template-areas: "A B C";
   padding: 5% 0;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "A B C";
 
   @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
     padding: 7.5%;
     grid-gap: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
       "A"
       "B"
       "C";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
   }
 `;
 
 const Lower = styled.div`
   display: grid;
+  padding: 5% 0;
+  grid-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
-  grid-gap: 20px;
-  padding: 5% 0;
-
   grid-template-areas:
     "A A C D"
     "B B E F";
 
   @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    justify-content: center;
     padding: 7.5%;
     grid-gap: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
       "A"
       "B"
