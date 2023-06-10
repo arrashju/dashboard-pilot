@@ -14,7 +14,7 @@ const Navbar = () => {
     dropdown: [
       {
         text: "Sign Out",
-        active: true,
+        active: false,
         href: "/auth/signout",
       },
     ],
@@ -44,7 +44,7 @@ const Navbar = () => {
             color="white"
             initials="JA"
           >
-            <Image src="/me.png" alt="Justin" width={40} height={41} />
+            <Image src="/me.png" alt="Justin" width={40} height={41} priority />
           </Nav.Img>
           <Nav.Dropdown>
             {links.horizontal?.map((link, index) => {
