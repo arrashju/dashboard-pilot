@@ -170,7 +170,7 @@ const OtherItems = styled.div`
   display: flex;
   grid-gap: 100px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media (max-width: 800px) {
     display: block;
