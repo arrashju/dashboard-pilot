@@ -28,7 +28,7 @@ module.exports = {
       color: #fff;
 
       @media (max-width: 500px) {
-        font-size: 30px;
+        font-size: 32px;
       }
     `,
     H2: css`
@@ -39,7 +39,7 @@ module.exports = {
       line-height: 42px;
 
       @media (max-width: 500px) {
-        font-size: 28px;
+        font-size: 26px;
       }
     `,
     B1: css`

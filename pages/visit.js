@@ -15,9 +15,14 @@ export default function Home() {
         >
           <Hero>
             <HeroDiv style={{ gridArea: "A" }}>
-              <H1 style={{ color: "#fff" }}>
-                {"Meet Shuddle Visit - Your cosmic adventure starts here!"}
-              </H1>
+              <div>
+                <H1 style={{ color: "#fff", marginBottom: "6%" }}>
+                  {"Meet Shuddle Visit"}
+                </H1>
+                <H2 style={{ color: "#eff1ef" }}>
+                  {"Your cosmic adventure starts here!"}
+                </H2>
+              </div>
               <Button
                 outline={true}
                 style={{ color: "#fff" }}
