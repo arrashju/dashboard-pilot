@@ -9526,10 +9526,10 @@ shell-quote@^1.7.3:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.8.1.tgz#6dbf4db75515ad5bac63b4f1894c3a154c766680"
   integrity sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==
 
-shuddle@^0.2.8:
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/shuddle/-/shuddle-0.2.8.tgz#1fd5e200f49a0b500e3c95bb7fa815d677ab1f8f"
-  integrity sha512-Od0XAYU10RZ07lzg/mgunhwwzvAeG44JvXQ5j8+f+ndyBoNj+WKLv3DdaAyQX/eP72R9+CGD6NbiCC/5t+1OEQ==
+shuddle@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/shuddle/-/shuddle-0.3.0.tgz#dbc6e09bd3672dbcc8f69240dc58fe6ab8788aa6"
+  integrity sha512-kHw1tCE1qe2FCq+ExkjaQ9go0n13vzfqMbMrxzP2gj312WGigPr3yVrW0jeAVBf2I+C+VzLSf0g4gvR/EOOUAA==
   dependencies:
     "@storybook/addon-actions" "^7.0.18"
     "@storybook/addon-contexts" "^5.3.21"

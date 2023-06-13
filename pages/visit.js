@@ -190,12 +190,12 @@ const HeroDiv = styled.div`
   align-items: flex-start;
   padding: 50px;
   gap: 10px;
-  height: 300px;
+  height: 320px;
 
   background: rgba(66, 107, 86, 0.7);
   border-radius: 13px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 1232px) {
     gap: 40px;
     height: auto;
   }
@@ -222,7 +222,7 @@ const Hero = styled.div`
   grid-template-rows: 1fr;
   height: 716px;
 
-  @media (max-width: 1130px) {
+  @media (max-width: 1200px) {
     padding: 7.5%;
     grid-gap: 50px;
     grid-template-columns: 1fr;
