@@ -19,12 +19,35 @@ module.exports = {
     body: "'IBM Plex Serif'",
   },
   typography: {
+    H1: css`
+      font-family: "IBM Plex Serif";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 39px;
+      line-height: 51px;
+      color: #fff;
+
+      @media (max-width: 500px) {
+        font-size: 30px;
+      }
+    `,
+    H2: css`
+      font-family: "IBM Plex Serif";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 42px;
+
+      @media (max-width: 500px) {
+        font-size: 28px;
+      }
+    `,
     B1: css`
       font-family: "IBM Plex Serif";
       font-size: 13px;
       font-weight: 450;
 
-      @media-query (max-width: ${breakpoint}px) {
+      @media (max-width: ${breakpoint}px) {
         font-size: 11px;
       }
     `,
@@ -33,7 +56,7 @@ module.exports = {
       font-size: 14px;
       font-weight: 450;
 
-      @media-query (max-width: ${breakpoint}px) {
+      @media (max-width: ${breakpoint}px) {
         font-size: 13.5px;
       }
     `,
@@ -42,7 +65,7 @@ module.exports = {
       font-size: 14px;
       font-weight: 700;
 
-      @media-query (max-width: ${breakpoint}px) {
+      @media (max-width: ${breakpoint}px) {
         font-size: 13.5px;
       }
     `,
@@ -50,7 +73,7 @@ module.exports = {
       font-family: "IBM Plex Serif";
       font-size: 18px;
       font-weight: 450;
-      @media-query (max-width: ${breakpoint}px) {
+      @media (max-width: ${breakpoint}px) {
         font-size: 16px;
       }
     `,
@@ -59,8 +82,17 @@ module.exports = {
       font-size: 20px;
       font-weight: 450;
 
-      @media-query (max-width: ${breakpoint}px) {
+      @media (max-width: ${breakpoint}px) {
         font-size: 18px;
+      }
+    `,
+    B5: css`
+      font-family: "IBM Plex Serif";
+      font-size: 26px;
+      font-weight: 500;
+
+      @media (max-width: ${breakpoint}px) {
+        font-size: 23px;
       }
     `,
   },

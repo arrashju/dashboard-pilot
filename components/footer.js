@@ -9,12 +9,37 @@ import {
   Twitter,
   YouTube,
 } from "./assets/social-media";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import _ from "lodash";
 
 const Footer = () => {
   const breakpoint = "1000";
+
+  const [footColor, setFootColor] = useState(theme.color.amethyst);
+  const [iconColor, setIconColor] = useState(theme.color.amethyst);
+  const router = useRouter();
+
+  useEffect(() => {
+    switch (router.pathname) {
+      case "/":
+        setFootColor(theme.color.amethyst);
+        setIconColor(theme.color.marina);
+        break;
+      case "/visit":
+        setFootColor(theme.color.green);
+        setIconColor(theme.color.apricot);
+        break;
+      default:
+        setFootColor(theme.color.amethyst);
+        setIconColor(theme.color.marina);
+        break;
+    }
+  }, [router]);
+
   return (
     <>
-      <ThemeProvider theme={{ breakpoint }}>
+      <ThemeProvider theme={{ breakpoint, footColor }}>
         <Background>
           <Top>
             <FooterList>
@@ -59,12 +84,12 @@ const Footer = () => {
           <Bottom>
             <OtherItems>
               <Icons>
-                <Instagram />
-                <LinkedIn />
-                <TikTok />
-                <Facebook />
-                <YouTube />
-                <Twitter />
+                <Instagram color={iconColor} />
+                <LinkedIn color={iconColor} />
+                <TikTok color={iconColor} />
+                <Facebook color={iconColor} />
+                <YouTube color={iconColor} />
+                <Twitter color={iconColor} />
               </Icons>
               <CompanyInfo />
             </OtherItems>
@@ -143,7 +168,7 @@ const Background = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 110px 0;
-  background-color: ${theme.color.amethyst};
+  background-color: ${({ theme }) => theme.footColor};
   padding: 59px 7.5%;
   color: white;
 
