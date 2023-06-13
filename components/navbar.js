@@ -14,7 +14,7 @@ const Navbar = () => {
   const router = useRouter();
   const links = {
     horizontal: [
-      { text: "Shuddle", active: true, href: "/" },
+      { text: "News", active: true, href: "/" },
       { text: "Visit", active: false, href: "/visit" },
       { text: "Ride", active: false, href: "" },
     ],
