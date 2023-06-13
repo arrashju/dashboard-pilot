@@ -142,7 +142,7 @@ export default function Home() {
                   textAlign: "center",
                 }}
               >
-                <B5>{"Experience Virtual Reality (VR) Immersion"}</B5>
+                <B5>{"Experience Virtual Reality Immersion"}</B5>
               </Card.Body>
             </Card>
           </Lower>
