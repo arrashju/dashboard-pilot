@@ -214,6 +214,9 @@ const H1 = styled.div`
 
 const H2 = styled.div`
   ${theme.typography.H2}
+  @media (max-width: 1200px) {
+    text-align: center;
+  }
   color: white;
 `;
 
