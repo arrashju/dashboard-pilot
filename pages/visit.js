@@ -190,6 +190,8 @@ const HeroDiv = styled.div`
   align-items: flex-start;
   padding: 50px;
   gap: 70px;
+  max-width: 600px;
+  margin: 0 auto;
 
   background: rgba(66, 107, 86, 0.7);
   border-radius: 13px;
