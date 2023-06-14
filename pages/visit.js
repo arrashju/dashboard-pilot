@@ -183,25 +183,6 @@ const B2 = styled.div`
   ${theme.typography.B2}
 `;
 
-const HeroDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 50px;
-  gap: 70px;
-  max-width: 600px;
-  margin: 0 auto;
-
-  background: rgba(66, 107, 86, 0.7);
-  border-radius: 13px;
-
-  @media (max-width: 1200px) {
-    height: auto;
-    align-items: center;
-  }
-`;
-
 const H1 = styled.div`
   ${theme.typography.H1}
   display: inline-block;
@@ -225,6 +206,23 @@ const HeroInput = styled.div`
   justify-content: center;
 `;
 
+const HeroDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 70px;
+  max-width: 600px;
+  margin: 0 auto;
+
+  background: rgba(66, 107, 86, 0.7);
+  border-radius: 13px;
+
+  @media (max-width: 1200px) {
+    align-items: center;
+  }
+`;
+
 const Hero = styled.div`
   display: grid;
   grid-template-areas: "C A A A A A D B B B B B E";
@@ -240,12 +238,8 @@ const Hero = styled.div`
     grid-template-areas:
       "A"
       "B";
-    height: auto;
   }
-
-  justify-content: center;
   align-items: center;
-  padding: 50px 0;
   gap: 10px;
   background-image: linear-gradient(
       0deg,
