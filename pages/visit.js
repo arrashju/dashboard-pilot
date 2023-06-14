@@ -195,14 +195,21 @@ const HeroDiv = styled.div`
   background: rgba(66, 107, 86, 0.7);
   border-radius: 13px;
 
-  @media (max-width: 1232px) {
+  @media (max-width: 1200px) {
     gap: 40px;
     height: auto;
+    align-items: center;
   }
 `;
 
 const H1 = styled.div`
   ${theme.typography.H1}
+  display: inline-block;
+  width: 100%;
+
+  @media (max-width: 1200px) {
+    text-align: center;
+  }
 `;
 
 const H2 = styled.div`
